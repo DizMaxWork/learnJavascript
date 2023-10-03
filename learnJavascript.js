@@ -101,5 +101,5 @@
 let input = prompt('Напишите число от 1 до 9')
 let num = Number(input)
 for(let i = 1; i <= 9; i++){
-    console.log(num + ' * ' + i + ' = ' + i * num);
+    console.log(`${num} * ${i} = ${num * i}`);
 }
