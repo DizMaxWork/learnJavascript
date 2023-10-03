@@ -63,7 +63,6 @@
 //   () => alert("Вы отменили выполнение.")
 // );
 
-
 // Условный оператор Switch
 
 // switch (num) {
@@ -82,24 +81,42 @@
 //     alert('Не знаете? ECMAScript!')
 // }
 
-
 //2)
 // let result = (2 + 3 < 4) ? alert('Мало') : alert('Много');
-
 
 //3)
 // let message = prompt('Введите должность', ''); (message == 'Сотрудник') ? alert('Привет') : (message == 'Директор') ? alert('Здравствуйте') : (message == '') ? alert('Нет логина') : alert('')
 
-
-
 //Задачи на циклы
 
+// 1)
 // for(let i = 1; i <= 10; i++){
 //     console.log(i);
 // }
 
-let input = prompt('Напишите число от 1 до 9')
-let num = Number(input)
-for(let i = 1; i <= 9; i++){
-    console.log(`${num} * ${i} = ${num * i}`);
+// 2)
+// let input = prompt('Напишите число от 1 до 9')
+// let num = Number(input)
+// for(let i = 1; i <= 9; i++){
+//     console.log(`${num} * ${i} = ${num * i}`);
+// }
+
+// 3)
+// let input = prompt('Введите число')
+// let num = Number(input)
+// for(let i = 1; i <= num; i++){
+//     console.log(`${num} + ${i} = ${num+i}`);
+// }
+
+// 4)
+// let input = prompt("Введите строку");
+// for (let i = input.length - 1; i >= 0; i--) {
+//   console.log(input[i]);
+// }
+
+// 5)
+let input = prompt("Введите число");
+let num = Number(input);
+for (let i = 0; i <= num; i += 2) {
+  console.log(i);
 }
