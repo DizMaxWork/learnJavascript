@@ -115,8 +115,57 @@
 // }
 
 // 5)
-let input = prompt("Введите число");
-let num = Number(input);
-for (let i = 0; i <= num; i += 2) {
-  console.log(i);
-}
+// let input = prompt("Введите число");
+// let num = Number(input);
+// for (let i = 0; i <= num; i += 2) {
+//   console.log(i);
+// }
+
+//Задачи на объекты
+
+// 1)
+// let user = {
+//     name: 'John',
+//     surname: 'Smith'
+// }
+// user.name = 'Pete'
+// delete user.name
+// console.log(user);
+
+// 2)
+// function isEmpty(obj){
+//     for (let key of obj){
+//         return false
+//     }
+//     return true
+// }
+
+// 4)
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+// let sum = 0;
+// for (let key in salaries) {
+//   console.log(key);
+//   console.log(salaries[key]);
+//   sum += salaries[key];
+// }
+// console.log("Итого: " + sum);
+
+// 5)
+// function multiplyNumeric() {
+//   let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu",
+//   };
+//   for (let obj in menu) {
+//     if (typeof menu[obj] == "number") {
+//       menu[obj] *= 2;
+//       console.log(menu[obj]);
+//     }
+//   }
+// }
+// multiplyNumeric();
