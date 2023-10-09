@@ -169,3 +169,49 @@
 //   }
 // }
 // multiplyNumeric();
+
+//Задачи на this
+// let calculate = {
+//     read(){
+//         this.num1 = +prompt('Введите первое число')
+//         this.num2 = +prompt('Введите второе число')
+//     },
+//     sum(){
+//         console.log(`Результат сложения: ${this.num1 + this.num2}`);
+//     },
+//     mult(){
+//         console.log(`Результат умножения: ${this.num1 * this.num2}`)
+//     }
+// }
+// calculate.read()
+// calculate.sum()
+// calculate.mult()
+
+//Задачи на new
+
+// function Calculator() {
+//   (this.read = function () {
+//     this.num1 = +prompt("Введите первое число");
+//     this.num2 = +prompt("Введите второе число");
+//   }),
+//     (this.sum = function () {
+//       console.log(`Результат сложения: ${this.num1 + this.num2}`);
+//     }),
+//     (this.mult = function () {
+//       console.log(`Результат умножения: ${this.num1 * this.num2}`);
+//     });
+// }
+// let calculate = new Calculator();
+// calculate.read();
+// calculate.sum();
+// calculate.mult();
+
+// function Accumulator(startingValue) {
+//   this.value = startingValue;
+//   this.read = function () {
+//     this.value += +prompt("Введите число");
+//   };
+// }
+// let accum = new Accumulator(5);
+// accum.read();
+// console.log(accum.value);
