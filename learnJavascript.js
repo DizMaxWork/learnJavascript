@@ -215,3 +215,11 @@
 // let accum = new Accumulator(5);
 // accum.read();
 // console.log(accum.value);
+
+//Задачи на массивы
+
+// function camelize(str){
+//     let arr = str.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('')
+//     console.log(arr);
+// }
+// camelize('background-color')
