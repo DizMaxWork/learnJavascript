@@ -223,3 +223,40 @@
 //     console.log(arr);
 // }
 // camelize('background-color')
+
+//Коллекции
+
+// let map = new Map();
+
+// map.set("str", "string").set(1, "number").set(true, "boolean");
+
+// console.log(map.get(true));
+// console.log(map.size);
+
+// let map = new Map([
+//   ["str", "string"],
+//   [1, "number"],
+//   [true, "boolean"],
+// ]);
+// console.log(map.get(true));
+// console.log(map.size);
+// console.log(map.has("str"));
+
+// console.log(map.size);
+// console.log(map.delete(true));
+// console.log(map.size);
+// console.log(map.clear());
+// console.log(map.size);
+
+// Set
+
+// let jack = { name: "Jack" };
+// let max = { name: "Max" };
+// let ivan = { name: "Ivan" };
+
+// let users = new Set();
+
+// users.add(jack).add(max).add(ivan).add(max).add(ivan);
+
+// console.log(users.size);
+// users.forEach((user) => console.log(user));
