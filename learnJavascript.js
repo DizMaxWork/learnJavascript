@@ -300,3 +300,8 @@
 // };
 // let { name, age, isAdmin = false } = user;
 // console.log(isAdmin);
+
+// let a = 1;
+// let b = 2;
+// let c = a && b;
+
