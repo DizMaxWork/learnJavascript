@@ -19,5 +19,3 @@ function deepClone(paramObj) {
   console.log(paramObj);
 }
 deepClone(structuredClone(obj));
-console.log("Измененный родительский объект");
-console.log(obj);
