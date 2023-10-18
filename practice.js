@@ -20,58 +20,38 @@
 // }
 // deepClone(structuredClone(obj));
 
-let users = {
-  user1: {
-    name: "Max",
-    age: 19,
-    id: 1,
-    adress: {
-      city: "Maykop",
-      street: "Pushkina",
-      number: 114,
-    },
-    parent: {
-      "solomikyna-e": {
-        age: 55,
-      },
-      "solomikyn-a": {
-        age: 57,
-      },
-    },
+let user = {
+  name: "Max",
+  age: 19,
+  id: 1,
+  adress: {
+    city: "Maykop",
+    street: "Pushkina",
+    number: 114,
   },
-  user2: {
-    name: "Max",
-    age: 19,
-    id: 1,
-    adress: {
-      city: "Maykop",
-      street: "Pushkina",
-      number: 114,
+  parent: {
+    "solomikyna-e": {
+      age: 55,
     },
-    parent: {
-      "solomikyna-v": {
-        age: 55,
-      },
-      "solomikyn-n": {
-        age: 57,
-      },
+    "solomikyn-a": {
+      age: 57,
     },
   },
 };
-console.log(users);
 
 function deepClone(obj) {
-  if (obj !== undefined) {
-    for (let key in obj) {
-      console.log(key);
-      deepClone(obj.parent[key]);
+  let newObj = {};
+
+  for (let key in obj) {
+    if (typeof obj[key] == "object") {
+      newObj[key] = deepClone(obj[key]);
+    } else {
+      newObj[key] = obj[key];
     }
   }
+  console.log(newObj);
 }
-for(key in users){
-  deepClone(users[key]);
-}
-
+deepClone(user);
 
 // let head = {
 //   glasses: 1
@@ -94,4 +74,3 @@ for(key in users){
 // };
 // console.log(pockets.pen);
 // console.log(bed.glasses);
-
