@@ -61,8 +61,8 @@ let users = {
 console.log(users);
 
 function deepClone(obj) {
-  if (obj.parent !== undefined) {
-    for (let key in obj.parent) {
+  if (obj !== undefined) {
+    for (let key in obj) {
       console.log(key);
       deepClone(obj.parent[key]);
     }
@@ -71,3 +71,27 @@ function deepClone(obj) {
 for(key in users){
   deepClone(users[key]);
 }
+
+
+// let head = {
+//   glasses: 1
+// };
+
+// let table = {
+//   pen: 3,
+//   __proto__: head
+// };
+
+// let bed = {
+//   sheet: 1,
+//   pillow: 2,
+//   __proto__: table
+// };
+
+// let pockets = {
+//   money: 2000,
+//   __proto__: bed
+// };
+// console.log(pockets.pen);
+// console.log(bed.glasses);
+
